@@ -1,20 +1,22 @@
 import React from 'react'
 
-import { Container } from '@/app/components/container'
+import { Html } from '@/app/components/html'
 import { Providers } from '@/app/components/providers'
 import type { LayoutProps } from '@/lib/next'
 
 const RootLayout: React.FC<LayoutProps> = ({ children }) => (
   <Providers>
-    <Container>
-      <header></header>
+    <Html>
+      <body>
+        <header></header>
 
-      <main>
-        {children}
-      </main>
+        <main>
+          {children}
+        </main>
 
-      <footer></footer>
-    </Container>
+        <footer></footer>
+      </body>
+    </Html>
   </Providers>
 )
 

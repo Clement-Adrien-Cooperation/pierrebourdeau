@@ -4,7 +4,7 @@ type CommonParams = {
   locale: Locale
 }
 
-type Params <T> = T extends null
+type Params <T = null> = T extends null
   ? CommonParams
   : CommonParams & T
 

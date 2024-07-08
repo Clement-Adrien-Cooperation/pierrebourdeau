@@ -1,0 +1,30 @@
+@layer normalize, colors, sizes, typography, elevations
+
+@import '@/styles/normalize.css'
+@import '@/styles/colors.css'
+@import '@/styles/sizes.css'
+@import '@/styles/typography.css'
+@import '@/styles/elevations.css'
+
+::selection
+  background-color: hsl(var(--primary, 0 0% 98%))
+  color: hsl(var(--primary-foreground, 240 5.9% 10%))
+
+html
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  -webkit-tap-highlight-color: transparent
+  accent-color: hsl(var(--ring, 240 4.9% 83.9%))
+  caret-color: hsl(var(--ring, 240 4.9% 83.9%))
+  color-scheme: dark light
+  font-size: var(--base-size, clamp(0.5rem, calc(0.4rem + 1vw), 1.5rem))
+  scroll-behavior: smooth
+  scroll-padding: var(--layout-spacing-l, 2.33rem)
+
+body
+  background-color: hsl(var(--background, 240 10% 3.9%))
+  color: hsl(var(--foreground, 0 0% 98%))
+  min-height: 100svh
+
+main
+  margin-inline: auto

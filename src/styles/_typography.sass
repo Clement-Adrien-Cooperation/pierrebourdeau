@@ -1,0 +1,103 @@
+// Font family variables var(--font-base) and var(--font-title) are defined in src/fonts/index.ts
+
+@layer typography
+  :root
+    --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+    --font-base: var(--font-fallback) //! add PP Object Sans
+
+    --font-size-200: 12px
+    --font-size-300: 14px
+    --font-size-400: 16px
+    --font-size-500: 20px
+    --font-size-600: 24px
+    --font-size-700: 28px
+    --font-size-800: 32px
+    --font-size-900: 40px
+    --font-size-1000: 68px
+
+    --line-height-200: 16px
+    --line-height-300: 20px
+    --line-height-400: 22px
+    --line-height-500: 26px
+    --line-height-600: 32px
+    --line-height-700: 36px
+    --line-height-800: 40px
+    --line-height-900: 52px
+    --line-height-1000: 92px
+
+    --font-weight-regular: 400
+    --font-weight-semi-bold: 600
+    --font-weight-bold: 700
+
+@mixin caption-1
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-200, 12px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-200, 16px)
+
+@mixin caption-1-strong
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-200, 12px)
+  font-weight: var(--font-weight-bold, 700)
+  line-height: var(--line-height-200, 16px)
+
+@mixin body-1
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-300, 14px)
+  font-weight: var(--font-weight-regular, 400)
+  line-height: var(--line-height-300, 20px)
+
+@mixin body-2
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-400, 16px)
+  font-weight: var(--font-weight-regular, 400)
+  line-height: var(--line-height-400, 22px)
+
+@mixin subtitle-2
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-400, 16px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-400, 22px)
+
+@mixin subtitle-2-stronger
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-400, 16px)
+  font-weight: var(--font-weight-bold, 700)
+  line-height: var(--line-height-400, 22px)
+
+@mixin subtitle-1
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-500, 20px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-500, 26px)
+
+@mixin title-3
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-600, 24px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-600, 32px)
+
+@mixin title-2
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-700, 28px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-700, 36px)
+
+@mixin title-1
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-800, 32px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-800, 40px)
+
+@mixin large-title
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-900, 40px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-900, 52px)
+
+@mixin display
+  font-family: var(--font-base, var(--font-fallback))
+  font-size: var(--font-size-1000, 68px)
+  font-weight: var(--font-weight-semi-bold, 600)
+  line-height: var(--line-height-1000, 92px)
